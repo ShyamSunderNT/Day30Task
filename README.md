@@ -39,6 +39,9 @@ To delete an entry, navigate to the "Delete" page, select an entry, and confirm 
 
 
 # API Endpoints
+
+data link https://665606013c1d3b60293bf8c6.mockapi.io/api/user
+
 Here are the endpoints used in this project:
 
 GET /api/data - Fetch all data
