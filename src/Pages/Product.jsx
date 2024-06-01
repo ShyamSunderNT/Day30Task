@@ -55,7 +55,7 @@ await axios.delete(`https://665b12fe003609eda45fbe77.mockapi.io/api/users/${id}`
             return(
                 <tr key={index}>
                 <th scope='row'>{e.id}</th>
-                <td>{e.userid}</td>
+                <td>{e.id}</td>
                 <td>{e.name}</td>
                 <td>{e.username}</td>
                 <td className='word-wrap'>{e.email}</td>
