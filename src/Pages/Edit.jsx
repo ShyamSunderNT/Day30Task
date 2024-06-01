@@ -27,7 +27,7 @@ useEffect(()=>{
 fetchData();
 },[])
 const fetchData=async()=>{
-    await axios.get(`https://665606013c1d3b60293bf8c6.mockapi.io/api/user/${id}`)
+    await axios.get(`https://665b12fe003609eda45fbe77.mockapi.io/api/users/${id}`)
     .then(res=>setEdit(res.data))
     .catch(err=>console.log(err))
 }
@@ -42,7 +42,7 @@ const handleChange=(e)=>{
     }
 const handleSubmit=async(e)=>{
    e.preventDefault();
-    await axios.put(`https://665606013c1d3b60293bf8c6.mockapi.io/api/user/${id}`,edit)
+    await axios.put(`https://665b12fe003609eda45fbe77.mockapi.io/api/users/${id}`,edit)
     .then(res=>console.log(res.data))
     .catch(err=>console.log(err))
     navi('/product')

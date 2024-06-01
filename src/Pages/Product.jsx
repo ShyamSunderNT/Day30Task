@@ -11,7 +11,7 @@ const Product = ({setId}) => {
     },[del])
     const fetchData=async()=>{
 
-        await axios.get("https://665606013c1d3b60293bf8c6.mockapi.io/api/user")
+        await axios.get("https://665b12fe003609eda45fbe77.mockapi.io/api/users")
         .then(res=>setData(res.data))
         .catch(error=>console.log(error))
     }
@@ -21,7 +21,7 @@ navig(`/edit/${id}`)
     }
     const handleDelete=async(id)=>{
 
-await axios.delete(`https://665606013c1d3b60293bf8c6.mockapi.io/api/user/${id}`)
+await axios.delete(`https://665b12fe003609eda45fbe77.mockapi.io/api/users/${id}`)
 .then(res=>setDel(res.data))
 .catch(error=>console.log(error))
     }

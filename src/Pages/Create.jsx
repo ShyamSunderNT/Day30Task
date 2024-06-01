@@ -36,7 +36,7 @@ const Create = () => {
         }
         const handleSubmit=async(e)=>{
            e.preventDefault();
-            await axios.post(`https://665606013c1d3b60293bf8c6.mockapi.io/api/user`,create)
+            await axios.post(`https://665b12fe003609eda45fbe77.mockapi.io/api/users`,create)
             .then(res=>console.log(res.data))
             .catch(err=>console.log(err))
             navi('/product')
